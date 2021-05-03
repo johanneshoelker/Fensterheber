@@ -9,7 +9,7 @@ lF  =0.375;     %m      Gesamtweg des Fensters
 d   =50;        %Nm/s   Dämpfung
 c   =10000;     %N/m    Federsteifigkeit
 
-%Haftkraft muss größer/gleich sein der gesamten Gewichtskraft sein:
+%Haftkraft muss größer/gleich der gesamten Gewichtskraft sein:
 FR_Haft =(mF+mS)*g       %N   
 FD      =FR_Haft/(4*mueH)%N Druckkraft der Filzgleiter (bleibt konstant)
 FR_Gleit=4*mueG*FD       %N
