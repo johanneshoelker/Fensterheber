@@ -10,11 +10,11 @@ d   =50;        %Nm/s   Dämpfung
 c   =10000;     %N/m    Federsteifigkeit
 
 %Haftkraft muss größer/gleich der gesamten Gewichtskraft sein:
-FR_Haft =(mF+mS)*g       %N   
+FR_Haft =(mF+mS)*g+0.1       %N   
 FD      =FR_Haft/(4*mueH)%N Druckkraft der Filzgleiter (bleibt konstant)
 FR_Gleit=4*mueG*FD       %N
 
-%Die Seilkraft muss etwas größer der Gewichts- und der Haftkraft sein:
+%Die Seilkraft muss gleich der Gewichts- und der Haftkraft sein:
 F_Seil_Haft=(mF+mS)*g+FR_Haft+0.1   %N
 F_Seil_Gleit=(mF+mS)*g+FR_Gleit+0.1 %N
 
