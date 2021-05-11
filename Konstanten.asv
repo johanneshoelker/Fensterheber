@@ -28,9 +28,9 @@ J=1.8           %g*cm²  Trägheitsmoment Motor
 Ta=0.000888     %s      Zeitkonstante des Motors
 Ra=1            %Ohm    NOCH BERECHNEN
 L=Ta/Ra         %H      Induktivität des Motors
-k4=1            %NOCH BERECHNEN
-k3=1            %NOCH BERECHNEN
-ks=1            %NOCH BERECHNEN
+k4=1            %
+k3=1
+ks=1
 
 Umfang_Rolle=pi*da;
 Umdrehungen_Rolle=lF/Umfang_Rolle   %Umdrehungen
