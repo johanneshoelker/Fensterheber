@@ -16,7 +16,7 @@ J=1.8           %g*cm²  Trägheitsmoment Motor
 Ta=0.000888     %s      Zeitkonstante des Motors
 i=1/49          %       Übersetzungsverhältnis
 
-%%%%%%%%%%%%%% VORGABEN %%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%% VORGABEN %%%%%%%%%%%%%%%%%%
 %Haftkraft muss größer/gleich der gesamten Gewichtskraft sein:
 FR_Haft =(mF+mS)*g+0.1   %N   
 FD      =FR_Haft/(4*mueH)%N Druckkraft der Filzgleiter (bleibt konstant)
@@ -28,14 +28,14 @@ F_Seil_Gleit=(mF+mS)*g+FR_Gleit+0.1 %N
 M_Seil_Haft=F_Seil_Haft*da/2         %Nm
 M_Seil_Betrieb=F_Seil_Gleit*da/2     %Nm
 
-%Sollvorgaben Antrieb
+%%%%%%%%%%%%%%%%% Antrieb %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Umfang_Rolle=pi*da;
 Umdrehungen_Rolle=lF/Umfang_Rolle   %Umdrehungen
 n_Getriebe_s=Umdrehungen_Rolle/9    %Umdrehungen/s
 n_Getriebe=n_Getriebe_s*60          %Umdrehungen/min
 n_Motor=n_Getriebe/i                %Umdrehungen/min
 n_Motor_s=n_Motor/60                %Umdrehungen/s
-    %daraus ergibt sich aus Motorkennfeld durch ablesen:
+%daraus ergibt sich aus Motorkennfeld durch ablesen:
 M_Mot=0.315                         %Nm
 Ia=10                               %A
 
@@ -46,3 +46,7 @@ UbN=k3*n_Motor_s*2*pi   %V      induzierte Spannung im Nennpunkt
 Ra=(Ua-UbN)/Ia          %Ohm    Innenwiderstand im Ankerstromkreis
 L=Ta*Ra                 %H      Induktivität des Motors
 ks=1            %NOCH BERECHNEN
+
+%%%%%%%%%%%%%%%% Reglerparameter %%%%%%%%%%%%%%%%%%%%%%%%
+kp=10
+ki=10

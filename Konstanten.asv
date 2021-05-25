@@ -16,7 +16,7 @@ J=1.8           %g*cm²  Trägheitsmoment Motor
 Ta=0.000888     %s      Zeitkonstante des Motors
 i=1/49          %       Übersetzungsverhältnis
 
-%%%%%%%%%%%%%% VORGABEN %%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%% VORGABEN %%%%%%%%%%%%%%%%%%
 %Haftkraft muss größer/gleich der gesamten Gewichtskraft sein:
 FR_Haft =(mF+mS)*g+0.1   %N   
 FD      =FR_Haft/(4*mueH)%N Druckkraft der Filzgleiter (bleibt konstant)
@@ -46,3 +46,7 @@ UbN=k3*n_Motor_s*2*pi   %V      induzierte Spannung im Nennpunkt
 Ra=(Ua-UbN)/Ia          %Ohm    Innenwiderstand im Ankerstromkreis
 L=Ta*Ra                 %H      Induktivität des Motors
 ks=1            %NOCH BERECHNEN
+
+%Reglerparameter
+kp=1
+ki=1
