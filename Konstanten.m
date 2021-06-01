@@ -48,5 +48,5 @@ L=Ta*Ra                 %H      Induktivität des Motors
 ks=1            %NOCH BERECHNEN
 
 %%%%%%%%%%%%%%%% Reglerparameter %%%%%%%%%%%%%%%%%%%%%%%%
-kp=10
-ki=10
+kp=1
+ki=1
