@@ -38,7 +38,7 @@ n_Motor_s=n_Motor/60                %Umdrehungen/s
 %daraus ergibt sich aus Motorkennfeld durch ablesen:
 M_Mot=0.315                         %Nm
 Ia=10                               %A
-eta=0.7                             %   Wirkungsgrad (üblicher Wert)
+eta=0.7                             %   Wirkungsgrad (üblicher We
 
 %Damit können die Konstanten berechnet werden:
 k4=M_Mot/Ia             %Nm/A   Maschinenkonstante
