@@ -53,3 +53,6 @@ ks=1            %NOCH BERECHNEN
 %%%%%%%%%%%%%%%% Reglerparameter %%%%%%%%%%%%%%%%%%%%%%%%
 kp=100
 ki=100
+kp_I=100
+kp_U=100
+ki_U=100
