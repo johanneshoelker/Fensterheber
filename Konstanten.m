@@ -39,6 +39,7 @@ n_Motor_s=n_Motor/60                %Umdrehungen/s
 M_Mot=0.315                         %Nm
 Ia=10                               %A
 eta=0.7                             %   Wirkungsgrad (üblicher Wert)
+inkr=980
 
 %Damit können die Konstanten berechnet werden:
 k4=M_Mot/Ia             %Nm/A   Maschinenkonstante
@@ -56,3 +57,4 @@ ki=100
 kp_I=100
 kp_U=100
 ki_U=100
+
