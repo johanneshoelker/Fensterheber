@@ -54,7 +54,7 @@ ks=1            %NOCH BERECHNEN
 %%%%%%%%%%%%%%%% Reglerparameter %%%%%%%%%%%%%%%%%%%%%%%%
 kp=1            %ausprobiert: 0.000001
 ki=0           %ausprobiert: 0.000001
-kp_I=0.0000000001       %ausprobiert: egal
-ki_I=kp_I*Ra/L       %ausprobiert: egal
+kp_I=0.0000001       %ausprobiert: egal
+ki_I=2          %ausprobiert: egal
 
 
