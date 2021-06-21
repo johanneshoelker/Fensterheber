@@ -52,9 +52,15 @@ ks=1            %NOCH BERECHNEN
 
 
 %%%%%%%%%%%%%%%% Reglerparameter %%%%%%%%%%%%%%%%%%%%%%%%
-kp=1            %ausprobiert: 0.000001
-ki=0           %ausprobiert: 0.000001
+%mithilfe des Symmetrischen Optimums:
+D=1
+a=2*D+1
+Va=1/Ra
+T1=(J+(mF+mS)*((da/2)^2/(i^2*eta)))/k4
 kp_I=0.0000000001       %ausprobiert: egal
+Tpi_A=Ta
+Tg=Tpi_A/(kp_I*Va)
+Tpi=Tg*a^2
+kp=T1/(a*Tg)            %ausprobiert: 0.000001
+ki=kp/Tpi           %ausprobiert: 0.000001
 ki_I=kp_I*Ra/L       %ausprobiert: egal
-
-
